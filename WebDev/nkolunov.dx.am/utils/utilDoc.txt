@@ -1,0 +1,12 @@
+str2php: Utility to convert strings to HTML or php
+
+1 = URL conversion
+2 = php echo string
+3 = php include string
+4 = template page with db connection and session
+
+Examples below:
+
+
+
+http://www.example.com

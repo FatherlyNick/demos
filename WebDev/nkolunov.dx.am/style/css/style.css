@@ -1,0 +1,299 @@
+html, body { height: 99%; }
+
+#wrapper {
+	
+	min-height: 100%;
+	height: 100%;
+	margin: 0 auto -30px;
+	
+ }
+
+/*#bottom, #push { height:30px; }*/
+
+body { background:#333;}
+
+#header { height:25px; background:#000; color:#fff; }
+
+#footer { background:#000; color:#fff; padding-left:5px; }
+
+.disclaimer {
+	position: absolute;
+	text-align: right;
+
+}
+
+#content { 
+
+	margin:10px;
+	background:#000;
+	color:#fff;
+	min-height:90%;
+	/* height:90%; testing stability. This causes weird behaviour on long pages such as definitionary */
+	width:99%;
+	padding-left: 5px;
+ }
+
+.teaserImg { 
+	position: absolute;
+	width:45%;
+	height:45%;    	
+    background-image: url("http://i.imgur.com/932vlO0.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+#rightSide {
+
+    position: relative;
+    text-align: right;
+    float: right;
+    width: 40%;
+    height: 80%;
+    margin-right: 10px;
+ }
+
+.rightSideContent {
+
+	text-align: center;
+	margin-top: 40px;
+	list-style-type: none;
+
+}
+
+ul {
+	
+	list-style-type: none;
+
+}
+
+.rectangular {
+
+	border:2px solid;
+	padding:10px;
+	font-family: courier new;
+
+ }
+
+.submitButton {
+
+	border:1px solid #333;
+	display:inline-block;
+	font-family:Courier new;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	margin-top:3px;
+ }
+
+.submitButton:hover {
+	
+	background-color:#fff;
+ }
+
+.submitButton:active {
+
+	position:relative;
+	top:1px;
+ }
+
+input[type="submit"] {
+
+	width: 105px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+a:link {
+
+    text-decoration: none;
+}
+
+a:visited {
+
+    text-decoration: none;
+	color: #5d5d89
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+a:active {
+
+    text-decoration: underline;
+}
+
+#sectionButtons {
+
+	position: absolute;
+	padding-top: 15px;
+
+}
+
+#codeSection {
+
+	margin-left: 50%;
+	height: 60%;
+	width: 45%;
+	position: absolute;
+}
+
+#changelist {
+	margin-top: 50px;
+	position: absolute;
+	height: 40%;
+	width: 50%;
+}
+
+#knownissues {
+
+	position: absolute;
+	height: 100px;
+	width: 200px;
+}
+
+#forum {
+
+	text-align: left;
+}
+
+.post-header {
+	
+	font-size: 2em;
+}
+
+#post_info {
+
+	font-size: 6px;
+
+}
+
+.defButFixed {
+
+	position: fixed;
+	right: 40%;
+}
+
+#translation-form {
+
+	position: center;
+	padding-left:5px;
+}
+.newWord-box {
+
+	height: 300px;
+	width: 600px;
+}
+
+.feedback-form {
+
+	height: 200px;
+	width: 400px;
+	vertical-align: middle;
+
+}
+
+.userEvents {
+
+	text-align: right;
+	position: fixed;
+	right: 30%;
+	margin-left: 20%;
+	word-break: break-all;
+	word-wrap: break-word;
+
+}
+
+.newEventBox {
+
+	height: 200px;
+	width: 300px;
+
+}
+
+.form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            color: #017572;
+}
+         
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+            margin-bottom: 10px;
+}
+         
+.form-signin .checkbox {
+            font-weight: normal;
+}
+         
+.form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+}
+         
+.form-signin .form-control:focus {
+            z-index: 2;
+}
+         
+.form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-color:#017572;
+}
+         
+.form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-color:#017572;
+}
+
+#navButtons {
+
+	text-align: center;
+
+}
+
+#updates {
+	
+	word-break: break-all;
+	text-align: center;
+	margin: 0 auto;
+	word-wrap: break-word;
+	
+}
+
+
+#updates2 {
+	
+	word-break: break-all;
+	word-wrap: break-word;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+
+.updateBox {
+
+	height: 400px;
+	width: 900px;
+
+}
+
+table, th, td {
+     border: 1px solid white;
+}
