@@ -1,0 +1,31 @@
+[Things to do ordered by priority.]
+
+=========/
+Stage 0 /
+=======/
+Split the db stuff of different pages into separate dbstuff dirs
+---
+
+==========================/
+The nkolunov v2.0 update /
+========================/
+- Change font from the the default
+- Front page re-format (Per customer spec)
+- Light and dark theme addition. White text on black background / Black text on white background
+- Buttons need change from default look
+- Adopt standard font style and size for Headers, warning, notifications, body text, URL text, button text.
+- Make a page with all of the available fonts
+
+pseudocode:
+{ Populate an array with all available fonts. String of text - echo string with font[i] <br> i++ } or use this: http://www.w3.org/Style/Examples/007/fonts.en.html
+---
+
+
+=====
+- Improve the format of the definitionary page
+- Improve the entry forms by preventing the user from accidentaly closing the page, warning should be displayed
+	Expand this further by caching the typed data so that no typed text would be lost.
+- Admin update Archive. Add a page where all of the admin updates can be viewed.
+- Add character count for text entry forms. Characters present / characters left; x/y
+- Add spam filters (post count per minute).
+

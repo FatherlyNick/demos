@@ -1,0 +1,403 @@
+#####ver-13/08/18##### v0.13
++ Fixed some session issues. A HTML comment cannot exist before a session_start() statement
++ Removed debug text from cal
++ Removed debug text from Login-form3
++ All code was sync'd and tested
+#####ver-09/08/18##### v0.12.9
++ Header was pointing to wrong dir for two JS scripts, causing 404s'. Now fixed.
++ Logout issue is now REALLY resolved. The logout button was pointing to nkolunov.dx.am but should have been pointing to wwww.nkolunov.dx.am - apparently that www makes a huge difference.
+#####ver-08/08/18##### v0.12.8
+- Logout still not working correctly. Did some further testing and logout still does not work as expected.
+#####ver-07/08/18##### v0.12.8
++ newUser page was pointing to the old dir for verifyPasswords. Now fixed to use the latest /scripts/ dir.
++ Fixed the logout issue. It was not clearing the session because the flush operation was not preceeded by session start(). Logout now completes fine.
+#####ver-03/02/18##### v0.12.7
++ Fixed the C# sample pre-view
++ Moved Javascript files to the script dir
+#####ver-03/01/18##### v0.12.6
++ Fixed some gramatical errors in the admin update post / Phase 0
+#####ver-20/12/17##### v0.12.6
++ Added index dir for the home page
++ Added link to todo page on the home page
++ Fixed an incorrect label of the TODO link
+#####ver-19/12/17##### v0.12.5
++ Deleted the test dir. No need for it at the moment, especially with the existance of the sandbox dir
++ Deleted img dir. There is already a media dir. Modified admin update script to reflect this.
++ Added .htaccess for 404 error
+#####ver-15/12/17##### v0.12.5
++ Added an sb dir to be used for sandbox testing
++ Added buttons.php into sandbox
++ Added urls.php into sandbox
+#####ver-09/12/17##### v0.12.5
++ Added early version of str2php
+#####ver-07/12/17##### v0.12.5
++ Added utils folder
++ Added utils specifications - first draft
+#####ver-05/11/17##### v0.12.5
++ Added a logout button to cal
++ Added logout functionality to cal
+- The logout button does not clear the session properly
+#####ver-20/10/17##### v0.12.4
++ Fixed re-direct if user fails to authenticate when posting an admin update.
+~ Would be better if it verified this w/o a redirect and let you know that the password is correct right there.
+#####ver-11/10/17##### v0.12.3
++ Minor front-end code review, removed some unecessary vars.
++ Renamed getUpdates to getLatestUpdate. This is to make way for the update archive page.
+#####ver-11/10/17##### v0.12.2
++ Looked into the mailer - gmail seems to be rejecting external mail. Some sort of firewall that I can't jump. My admin acc on Awardspace gets the mail just fine.
++ Went back to version 5.4.9 of Swift. Version 6 contains too many changes that make it incompatible with my implemintation. Will need to port it over later.
+~ Test the mailer further. So far no mail went through - no errors have been thrown however. Will consider doing a Fiddler trace (now fixed)
+#####ver-10/10/17##### v0.12.1
+~ Fixing the Swift mailer.
+~ need an autoloader
+~ Figure out why swift_encoding is not found
+#####ver-08/10/17##### v0.12
++ Added img and VO URL rows into the post db table
++ Defy will now display VO and img url if it is present
++ Now possible to add img and audio to defy
++ Now possible to edit img and VO urls
++ The existing img and VO urls will be auto-populated in the string entry form
+#####ver-25/09/17##### v0.11.10
++ Added nav buttons to the New Word form of Defy.
++ Changed the wording on Defy (main text and placeholders), so now it fits a dictionary and definition use cases.
+#####ver-24/09/17##### v0.11.9
++ It is now possible to edit existing words on Defy.
+- Add ability to link audio to a definition
+- Add ability to link images to a definition
+#####ver-18/09/17##### v0.11.8
++ Migrated to a paid server, changed the dbcon code to the new server
+#####ver-15/09/17##### v0.11.7
++ Edit button added to the defy page for each word. The button will get the ID of the added word and redirects the user to the newWord page with id=wordID
+- The newWord page should have code that populates the two fields for the appropriate ID'd string
+- The submit button should trigger Alter code if the string ID exists
+#####ver-14/09/17##### v0.11.6
++ Small text changes on the aboutMe page
++ Small text change on the ToDo page
+#####ver-18/08/17##### v0.11.6
++ Moved the additional defy features date to September. Linking audio and images is still not possible.
++ Added navbuttons to some login forms for better cross-site consistency.
+#####ver-18/08/17##### v0.11.5
++ Fixed bug with cal login form 3, the username variable was username3
+#####ver-18/08/17##### v0.11.4
++ The Admin updates that contain a long strong with no spaces, will be wrapped
++ Increased the char limit to 2092 to prevent truncation
++ Cosmetic changes of the admin update form
+#####ver-16/08/17##### v0.11.3
+- Need to add a secure way to keep user logged in if they tick a 'keep me logged in' box.
+#####ver-14/08/17##### v0.11.3
++ Properly centered the admin update section
++ Removed the username field from admin update form
++ Fixed aboutMe page, there was a $page assignment before the header setting
++ Included a admin Update button on the about me page
+#####ver-09/08/17##### v0.11.2
++ Update form now includes line breaks
++ Default image URL is now set in the submit
++ The Update text now wraps and doesn't go outside of the page
++ Fixed bug with cal login form1 - the pageVar was not in the form. It should be.
++ The new event form now handles line breaks
++ The new event form now wraps text
+- The Front page admin updates should have the date on top of the post and visible.
+#####ver-08/08/17##### v0.11.1
++ Added form to post admin updates
++ Added Update post handler
++ Fixed duplicate session_start() from calLogin handler
+#####ver-07/08/17##### v0.11.0
++ Updated the front page to include update posts
++ Removed changelist from front page
++ Centered the navButtons
++ Created Updates table
++ New getUpdates.php pull - it will only pull the latest updates
++ Added an official logo to the site
+- Need to add a wayt to easier post site updates
+- Need to add a page on which all updates are visible
+#####ver-06/08/17##### v0.10.0.3
++ Added m.nkolunov.dx.am - the mobile version of the site will be hosted there.
+#####ver-04/08/17##### v0.10.0.2
++ Created fe-test directory with a,b sub-dirs for testing different site style
+#####ver-02/08/17##### v0.10.0.1
++ Fixed an issue with loginForm2 - it was missing the pageVar identifier
++ Fixed an issue with the Register URL in getAllEvents - the URL was relative and not direct cauing the page to re-direct to an unexisting page
+#####ver-31/07/17##### v0.10
++ Sessions now work on Calendary
++ If no user is logged in, they are presented with login / register urls
++ The urls will be consistent. One clicked from the main page, will return to main page and vice-versa.
+- Need to make the page more friendly visually
+#####ver-30/07/17##### v0.9.4.1
++ Session now somewhat works
+- Need to hook up all the cal functions with the session
+#####ver-29/07/17##### v0.9.4.0
++ Login now works
+- Implemment session variables in the login page
+- Insert the login form to the calendary page
+#####ver-26/07/17##### v0.9.3.2
++ Testing login n pass verification with sessions
+#####ver-25/07/17##### v0.9.3.1
++ Minor edits to the DB accounts table
++ Minor edit to the st test page
+#####ver-24/07/17##### v0.9.3.0
++ Edited newUser for cal form to take in a password parameter that matches each other.
+#####ver-23/07/17##### v0.9.3.0
+~ Looked into php $_SESSION[] - this can store variables.
+	- The user will login using their ID and password
+	- The password and usernamed are stored in the db
+	- After login, your username will be stored in a $_SESSION variable and data will be retrieved from DB using that var.
+- Decided to ditch the ID only login. You will need a password and username.
+#####ver-20/07/17##### v0.9.3.0
++ Added a way to insert events associated with a userID
++ It is possible to view events based on your ID on main cal page and new event page
++ Removed extra text from navbuttons
+- Still need to implement proper session login so no header trickery is neccessary
+- Add a checkbox for cookie generation if user wants to be remembered
+#####ver-16/07/17##### v0.9.2.3
++ Removed debug output on the New Event form.
+#####ver-15/07/17##### v0.9.2.2
++ Shortened the header text
+#####ver-15/07/17##### v0.9.2.1
++ Adding events now possible to the calendary table
++ Added event type
++ The month part of DMY will now be starting at 1 and going to 12 instead of 0 to 11. This makes more sense at the front end. I modded the cal.js to do this
++ Fixed bug where the DMY would reset after adding an event. Was caused by me deleting the various $_GETs from the new Action page.
++ Added a 'Events for d/m/yyyy' text to the event display
+- Add a way to say "no events for this date" if the DB does not return any events.
+- Add user ID tracking when adding events. Need to grant User a session with his ID.
+- The user should login and is redirected back to the main calendary page. On the rights side of the screen, all user events are displayed
+- When user clicks on a date, all admin test events should be displayed - debug feature for now, also all user events should be displayed in kneat blocks
+--The block containd the date and event description
+#####ver-13/07/17##### v0.9.2.0
++ Changed the defy Translation label to say Meaning. More robust this way.
++ Added functionality to register a user
++ Added a register success page
++ Added a register button to Calendary
+#####ver-12/07/17##### v0.9.1.1
++ Updated the aboutMe page. It now is consistent with the rest of the site.
++ Deleted the Swift library - turns out I do not need it at all.
+#####ver-11/07/17##### v0.9.1.1
++ Removing Wrapper div fixes the extra white-space issue on the bottom of pages.
++ Removed post id from defy entries, hope this will improve performance. The look is better now.
++ Moved the div from the getWord php code to outside the code. Hope this will improve performance.
+- Remove Wrapper from every page.
+~ Moved Templates folder to Unused.
+#####ver-11/07/17##### v0.9.1.0
+~ Ongoing tests of Feedback and contact handler. Trying to optimise it and speed up the mail dispatch.
+#####ver-08/07/17##### v0.9.1.0
++ There were issues with the feedback form not sending and an error was being reported. This was a host-side issue.
+- Need to add a testing procedure before every commit to the repo. The test should cover all functionality / urls and all issues should be added to the knownissues page.
+- No post IDs should be displayed with the dify posts
+- The original / translation should be changed to fit more cases. (Original + meaning instead of translation)
+- Known issues button added to every footer and aligned to the right borrom corner.
+#####ver-03/07/17##### v0.9.0.2
++ Added the Feedback button to the header. Now every page has a feedback function, which makes sense.
++ Fixed the fillBox script. The header was referencing a test script and not the real one. I removed the old script.
++ Edited the Samples page heading to be a paragraph to improve the look.
+#####ver-02/07/17##### v0.9.0.1
++ Create a separate .php for navigation buttons for home / defy / cal. These allow for a more consistent experience
++ Improved the layout of Defy by adding separators for alphabetic sections
++ Modified DOCTYPE to be HTML5 compliant
++ Removed the lone 'home' buttons from pages
++ Changed the local (context relative) paths in Header.php to be complete paths instead. There were issues with scripts not loading
++ Removed redundant DOCTYPEs from index page and other pages
++ Made a disclaimer header that works across all pages and placed it instead of the page-by-page header that was included.
++ Shortened the disclaimer header. This hopefully will improve the mobile view of the pages
+- Need to clean up the Defy db. I no longer have need for the test strings
+- Need to further improve the Defy layout and add the promised functions like image and audio uploads
+#####ver-30/06/17##### v0.9
++ Modified the accounts db table
++ Created the calendary table
++ Backed up db in an sql script - added to dbstuff
+- Create a cookie that would store the user-data like user ID (assuming they accepted to be remembered)
+#####ver-29/06/17##### v0.9
++ Added a way to extract the date info from the URL. _GET[] works well for this
++ Figured out how to sort it in the db day+month+year number combo with a post ID and userID combined should narrow down the search.
+- Implemment the back end code for the DB as needed.
+#####ver-28/06/17##### v0.9
++ Changed the cal URL data separators from '?' to '&'. It just makes more sense here.
++ Added forgotID and newID pages. Their names do the explaining. Some boiler-plate construct was done on them for now
++ Fixed the footer aboutme URL. It was not a full path and was leading to a 404 page
++ Added Register button to cal page that leads to the register page.
++ Added forgotID button that leads to the forgotID.php page.
+- Add functionality to the Register and Forgot pages
+- Create the DB entries for user IDs and calendar entries.
+#####ver-27/06/17##### v0.9
++ Added URLs to every day in the calendar
++ Every URL now passes its day, month and year. This will be used when identifying each day for the diary entries in the db
+- Need to work on the newAction page and add all of the specified content
++ The calendar part of Calendary is now operational!
+- Need to add the Diary functionality
+- Every date should be a URL to an addEntry form
+- The added events should be asociated with a unique user, so that multiple users could have their own calendars.
+- Add viewEvents button that would view Entries a specific user has entered
+- Look into possibly editing the format of the calendar, the current vertical line isn't looking that good and the user has to scroll.
+#####ver-26/06/17##### v0.8
++ Fixed the calendar.js <script> tag. It was not supposed to be self-closing
+~ Set up a JavaScript testing environment in Eclipse Mars
+~ Created a separate local directory for the Calendar.js testing with a testPage.html file
+~ The testing environment has a custom run tool that runs IE and opens testPage.html
+#####ver-22/05/17##### v0.8
+~ Looked into the Calendar code
+- Need to print all months in separate table
+- Need to make sure that the months are accurate (days of week match with actual real dates of current year)
+- Need to highlight only current date and current day of week
+#####ver-17/05/17##### v0.8
++ Change the look of the index page
++ Moved the unused script.js to the unused section
++ Moved the code samples to a separate samples directory and fixed all of its references
++ The Definitionary and Samples now have dedicated buttons on the index page
++ Added a Home button to the code samples page
++ Created the Calendary directory and placeholder page
++ Fixed the appearance of NewWord.php - Wrapper and Footer were missing
++ Fixed appearance of the Feedback.php - Wrapper and Header were missing
++ Added sample calendar to the Calendary page
+- Modify the calendar to be functional
+- Modify the Calendary page to have multiple calendars (months)
+#####ver-17/05/17##### v0.7
++ Improved the way definitionary works by changing the Section A - Z to be in a single for() loop
++ Removed some unused code from several files
++ Moved definitionary files to a defy folder
+#####ver-16/05/17##### v0.6
++ Added validation to the fb/fr form
++ Remove unnecessary js code from the fb/fr form and from header.php
++ Improved the way the category dropdown works - it now fills the fb/fr text area with appropriate text
++ Fixed the anchor link after an email is sent- it now is clickable
++ Fixed the quoted-printable characters (line-breaks appearing as '=20' and '=' appearing as '=3D') with ->setEncoder(Swift_Encoding::get8BitEncoding())
+- Make the success page auto-redirectable back to Definitionary
+#####ver-15/05/17##### v0.5
++ The SMTP mailer now works via SwiftMail library and the Awardspace SMTP server.
+- Need to tidy up the end mail to contain all the useful infomation and remove the placeholder text
+- Need to find a way to do an auto redirect after sending the mail and also fix the anchor URL
+#####ver-20/04/17##### v0.45
++ Added feedback button beside the Add Word button
++ Edited the CSS for new Word button to be associated with other '<fixed>' buttons
+#####ver-25/03/17#####
++ Fixed the alphabetical sorting. It was not working due to regex being [A-z]|[A-z] rather than [A|a] etc
+#####ver-19/03/17#####
++ Changed the content.php to be index-content.php
++ Added Definitionary URL to the home page
++ Changed the way URL look after being clicked on
++ Created issues and Feature Request tables in db
++ Added the db generating script to the trunk
+#####ver-18/03/17#####
++ Definitionary is officially in Beta with v0.4
++ Made a separate page for new-string, now you no longer have redundant forms on the definitionary page
++ Added a new-string button that follows the scroll of the page for ease of use
++ Formatted the new-string page so that it is easier to use
++ Changed the original and translation text boxes to be classed as textarea for multiline input
+- Need to fix the formatting on the definitionary so that individual letter sections are easily visible
+- Divide the definitionary into more .php files for modularity
+- Add ability to leave feedback in the known issues page
+- Add a 'leave feedback' button to the definitionary page
+#####ver-11/03/17#####
++ Completed the definitionary page
++ Updated the newString.php visually
++ Moved the db query out to getWords.php
++ Updated the backup script to auto-upload to OneDrive and also delete the .rar
++ Added back the validation script to the entry form
++ Deleted the original validation script, browsers reported 403 forbidden 
+#####ver-05/03/17#####
++ Moved the db insert form to newString.php
+#####ver-19/02/17#####
++ Added div to the dbtest page in the SELECT string
++ Added TODO.html
+#####ver-18/02/17#####
++ Changed the footer copyright year
++ Ordered the dbtest page ASC (Alphabetic)
+#####ver-17/01/17#####
++ Cleaned up the code in dbStuff
+#####ver-14/01/17#####
++ Fixed the background not covering the entire Content div
++ Modified the iframes to use % instead of px. Helps with sizing
++ Created posts table
++ Enabled inserts into the DB
+- Integrate the working DB inserts into the Definitionary
+- Add Search function (probably not a priority feature since you can use built-in search)
+- Enable the DB inserts to go into the appropriate alphabetical sections i.e words starting with A go to the A section and so on
+- Clean up files from leftover code
+#####ver-13/01/17#####
++ Fixed footer issue on definitionary.php - footer did not display while being within the content div
++ Added dbstuff folder for db things
++ Modified the dbcon.php to be more robust
+- Fix error on definitionary.php, issue with blog-content.php and fetch method. Suspect its due to missing "posts" table
+- Fix the #conten div height problem on index.php
+#####ver-02/11/16#####
++ Modified Definitionary page to be similar to the index page
+- Need to implement Definitionary functionality
+- Add placeholder forms and DB query display on the page too
+- Add alphabetical index to the main Definitionary page
+#####ver-01/11/16#####
++ Added Definitionary page
+#####ver-30/05/16#####
++ Modified the DB table for comments
++ Modified the layout of the dbtest page
++ Made db connection more secure
+- Fully develop the form with backend
+- Be able to post to DB w/ validating form and show post without refreshing the page
+- Clear the text boxes of POST after they are submitted *SUCCESSFULLY*
+#####ver-29/05/16#####
++ Added some temporary forum-style form
+- Fully develop the form with backend
+- Be able to post to DB w/ validating form and show post without refreshing the page
+- Clear the text boxes of POST aftre they are submitted *SUCCESSFULLY*
+#####ver-24/05/16#####
++ Fixed "Question marks should not start tags" error (page was not .php)
+#####ver-29/11/15#####
++ Fixed .java, C++, Python, .bat issues for various browsers using the <pre><code> tags.
++ Fixed a layout issue with the codeSection iFrame
+#####ver-22/11/15#####
++ Added a known issues iframe instead of stuffing everything into the changelist
++ Removed knownIssues iframe from front page and added a URL to it instead
++ Added Known Issues text file to directory
++ Linked KI file to its iframe
+- Need to fill the known issues page with relevant text
+#####ver-15/11/15#####
++ Fixed the .py showstopper. .py files cannot be displayed in HTML and they will execute.
++ Fixed overlaps occuring on the bottom of the page.
++ Added a bug status row into the db
++ Added echo code to display the bug status
++ Edited the codeSection div to occupy more of the screen space
+#####ver-11/11/15#####
++ Database has been fixed.
++ The link on the front page has been fixed to point to the .php page instead of .html
+- Overlaps occuring. Possible fix is to decrease font size or restrict amount of text. Preferably the more robust solution.
+- Format the table properly in the db
+- Add db specific HTML
+- Add ability to push bug reports into the db
+#####ver-09/11/15#####
+- The database just refuses to work. The debug error prompts return blanks instead of actual errors, making it hard to debug. Need to investigate.
+#####ver-07/11/15#####
++ Fixed formatting to add this changelist to the front page
++ Fixed some typos
+- The current db queries do not display content in HTML. Probably need to specify rows which need to be displayed.
+#####ver-05/11/15#####
++ bound every button to an actual file
++ Uploaded lang samples
+***Python causes a fatal crash***
+- Cpp file does not show up in IE.
+- .bat does not show up in the iFrame
+- Add db connectivity with ability to add bugs/tasks to a database.
+#####ver-01/11/15#####
++ Cleaned up the server side directory by deleting files.
++ Cleaned up files by removing some unused components.
+#####ver-31/10/15#####
++ Fixed the fillBox() function. It now does fill the iFrame with correct content.
+- Write HelloWorld fucntions for all listed languages
+- Bind buttons to corresponding language files
+- fillBox should have more 'robustness'. Handle empty arguments, no 404.
+- Add report bug button. Have it fill in title and the body sample.
+#####ver-27/10/15#####
++ Changed the changelog.html file to oncly include !PLACEHOLDER! text. All original changelog text removed.
+#####ver-20/10/15#####
++ bound all buttons to fillBox()
+#####ver-13/10/15#####
++ Fixed the Javascript function
++ Binded the button to the Javascript
+- Need to bind rest of buttons
+- Find way to trigger a list of buttons
+#####ver-09/10/15#####
++ made some prep-work for the code insertion script
+#####ver-08/10/15#####
++ The iFrame displays content
+- Fix allignment in iFrame
+- Bind buttons to iFrame content
+#####ver-27/05/15#####
++ Got the login working
+- Update the login info
+- Add content to the internal page

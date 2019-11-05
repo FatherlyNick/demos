@@ -1,0 +1,6 @@
+Logout does not work after loginForm3 - investigating
+Logged in user still sees Register and Forgot my ID buttons - they don't need this.
+Firefox ignores header(refresh) code
+SQL insert statements are succeptible to injections
+Login is not using https
+Cal's month name colour blends with the background
