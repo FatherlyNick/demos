@@ -3,3 +3,11 @@ became a JavaScript calendar app where users could add events and a public dicti
 along with sounds and pictures of the word. Editing was allowed. I wanted users to be able to modify their own words they added - for this
 I created a simple password system that authenticated a user (to make sure it was the original poster of the word) and then allowed
 modifications if the password matched up with the word added.
+
+
+How to use: 
+1) download the whole directory as nkolunov.dx.am;
+2) Put this dorectory on your server (you need a webserver to run all of the php)
+3) Run dbstuff/1803541_db STRUCTURE.sql script on your mySQL db and it will set up the db as you need
+  optionally, run dbstuff/1803541_db DATA.sql to populate the db with some data
+4) Each directory has an about file to explain what its doing. Read these if you wish to find out what the directory is about
