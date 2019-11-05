@@ -1,0 +1,27 @@
+<?php
+
+//when you're developing, putting these kinds of checks
+//in can make it easier to identify errors
+if (!isset($post_id))
+{
+    echo "SOMETHING WENT WRONG!";
+    exit;
+}
+
+?>
+
+<div id="comment-form">
+    <span>Leave a comment:</span>
+    <form action="scripts/post-comment" method="POST">
+        <input type="hidden" name="post_id"
+            value= <?php echo $post_id ?>>
+        Name:
+        <input type="text" name="commenter_name" />
+        <br />
+        Comment:
+        <br />
+        <textarea name="content"></textarea>
+        <br />
+        <input type="submit" value="Submit"/>
+    </form>
+</div>

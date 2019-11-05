@@ -1,0 +1,57 @@
+This is the update log. Any changes made must be noted here. Revision number must be incremmented.
+
+
+	<<--Current version: 10-->>
+
+	:: Front page made
+	:: All elements updated to PHP instead of HTML.
+	:: Page is responsive to changes dynamically
+	:: All links are operational
+	:: All CSS files are in place
+	:: Database connectivity in place
+
+	
+
+
+	<<--Changes made-->>
+	
+	+ Added 'about' page
+	+ Tidied up the CSS file
+	+ Added 'future' page
+	+ Added a button to the Sidebar
+	+ Removed the button from the Sidebar
+	+ Added a Large Font button to the Header
+	+ Added a Default button to the Header
+	+ Added a High contrast button to the Header
+	+ Edited the Large font CSS
+	+ Fixed issue with the current page not ebing highlighted
+	+ Added a footer and properly formated in CSS
+	+ All links are now operational
+	+ Fixed the additional CSS files to display the footer properly
+	+ Changed the title of 'Information' to 'About Doom' to avoid misleading the user.
+	+ Completed the database connectivity functions
+
+	<<--List of things in progress/to be added-->>
+
+	- Additional JavaScript feature of choice (a 'print page' button should do the trick!)
+	
+
+
+
+
+	<<--List of known issues-->>
+
+	* Favicon not working in Internet Explorer
+	[Suggested fix: ]
+
+	* The contents in the 'contents' div are not perfectly centered
+	[Suggested fix: ]
+
+	* Resizing of the page results in unproportionality of the contents
+	[Suggested fix: change the padding to be in '%' instead of 'px']
+	//=======================================================================================================================================
+	*The header does not show which page you are currently on
+	[Suggested fix: using php name tags for different pages and letting the CSS generate on the fly depending on which page its currently on ]
+	========================================================================================================================================//
+	* Selected CSS are not set when switching to a different page.
+	[Suffested fix: Use a cookie to keep track of the current CSS set.]

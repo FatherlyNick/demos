@@ -1,0 +1,143 @@
+body {
+
+background-image: url(img/background.jpg);
+
+}
+
+li { 
+    list-style: none;
+ }
+
+
+
+h1,h2 {
+
+display: inline-block;
+    margin: 10px 0 0 0;
+
+
+}
+
+
+
+#header {
+    
+	text-align: center;
+    	overflow: hidden;
+    	border-color: black;
+
+
+
+}
+
+
+
+#descr {
+
+	text-align: center; 
+	overflow: hidden; 
+	color: white;
+
+}
+
+
+
+#nav li {
+    display: inline-block;
+    min-width: 12em;
+    font-size: 17px;
+
+
+}
+
+
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+  
+
+
+}
+
+
+
+#nav li {
+  
+    padding: 5px;
+    border-style: solid;
+
+}
+
+
+
+#nav li:hover {
+    background-color: black;
+
+
+}
+
+
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+
+
+#sidebar {
+
+float: right; 
+width: 200px;
+/*opacity: 1;*/
+height: 100%;
+margin: 0px;
+padding: 4px;
+}
+
+.newslink {
+
+
+
+padding-right: 25px;
+
+
+}
+
+
+.selected {
+
+display: inline-block;
+color: grey;
+
+
+}
+
+.second {
+
+display: inline-block;
+
+}
+
+#footer {
+	
+	text-align: right;
+	padding-top: 25%;
+	padding-left: 70%;
+	color: white;
+
+}
+
+#content {
+text-align: center;
+color: white;
+padding-left:147px;
+padding-right:100px;
+
+}

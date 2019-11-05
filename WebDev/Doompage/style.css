@@ -1,0 +1,258 @@
+body {
+
+background-image: url(img/background.jpg);
+
+}
+
+li { 
+    list-style: none;
+ }
+
+
+
+h1,h2 {
+
+display: inline-block;
+    margin: 10px 0 0 0;
+
+
+}
+
+
+
+#header {
+    
+	text-align: center;
+    	overflow: hidden;
+    	border-color: black;
+
+
+
+}
+
+
+
+#descr {
+
+	text-align: center; 
+	overflow: hidden; 
+	color: white;
+
+}
+
+
+
+#nav li {
+    display: inline-block;
+    min-width: 12em;
+    font-size: 17px;
+
+
+}
+
+
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+  
+
+
+}
+
+
+
+#nav li {
+  
+    padding: 5px;
+    border-style: solid;
+
+}
+
+
+
+#nav li:hover {
+    background-color: black;
+
+
+}
+
+
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+
+
+#sidebar {
+
+float: right; 
+width: 200px;
+/*opacity: 1;*/
+height: 100%;
+margin: 0px;
+padding: 4px;
+}
+
+#social-plugs {
+
+
+padding-bottom: 3.5em;
+
+}
+
+a#new-post {
+    display: block;
+    background-color: #C2C2C2;
+    padding: 0.4em;
+	margin: 0 0 1em 0;
+    text-decoration: none;
+    color: black;
+}
+
+h4#topics-title {
+
+	color: white;
+
+
+}
+
+
+.newslink {
+
+
+
+padding-right: 25px;
+
+
+}
+
+.topics {
+
+display: block;
+    	font-color: black;
+	background-color: #C2C2C2;
+	padding: 0.4em;
+   	margin: 0 0 1em 0;
+       color: black;
+	
+
+
+}
+
+.selected {
+
+display: inline-block;
+color: grey;
+
+
+}
+
+.second {
+
+display: inline-block;
+
+}
+
+#footer {
+	
+	text-align: right;
+	padding-top: 25%;
+	padding-left: 300px;
+	color: white;
+
+}
+
+#content {
+text-align: center;
+color: white;
+padding-left:147px;
+padding-right:100px;
+
+}
+
+
+
+#forum {
+
+text-align: left;
+
+}
+#post {
+
+
+
+
+}
+
+
+
+.post-header {
+
+	
+	font-size: 2em;
+
+}
+
+
+.thread-title {
+
+
+text-align: left;
+
+
+}
+
+
+.post-content {
+	font-size: 18px;
+	border-style: solid;
+	border-color: #BBBBBB;
+	border-width: 1px 0 0 0;
+	width: 65%;
+	padding-bottom: 8px;
+
+}
+
+.post-footer {
+
+	background-color: inherit;
+    	background-color: #BBBBBB;
+	border-style: solid;
+	border-color: #BBBBBB;
+	border-width: 0 0 1px 0;
+	font-size: 12px;
+	width: 70%;
+
+}
+
+.comment-header {
+
+	padding-top: 8px;
+
+
+}
+
+.comment-footer {
+    background-color: inherit;
+    background-color: #BBBBBB;
+	padding-right: 50px;
+	padding-left: 20px;
+	font-size: 10px;
+	width: 60%;
+	
+}
+
+.comment-content {
+
+	padding-left: 20px;
+
+
+}
