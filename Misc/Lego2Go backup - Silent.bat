@@ -1,6 +1,7 @@
 :: # Bat used to compress a folder and then copy it into a cloud client; A backup of sorts. 'Silent' indicates that # ::
-:: # the script will not ask for any user input unless there are errors.                                            # ::
-::To customise this, edit the vars highlighted with ###
+:: # the script will not ask for any user input unless there are errors. a version file needs to exist. Its used to # ::
+:: # keep track of the current version. Every time script runs, the version file is incremented by 1		    # ::
+:: # To customise this, edit the vars highlighted with ###
 
 ::no need to echo everything
 @echo off
@@ -23,7 +24,7 @@ cd %HOME%
 ::reformat the date variable to be able to save it as a file name
 set date1=%date:~0,2%.%date:~3,2%.%date:~8,2%
 
-::Get the latest version number from the version file
+::Get the latest version number from the version file ###
 set /p versionNum=< C:\l2g-ver.txt
 
 ::increment the version number
