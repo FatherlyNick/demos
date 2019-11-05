@@ -1,0 +1,5 @@
+This directory is dedicated to a personal site I developed between 2014 and 2017. It was meant to be a portfolio of sorts but instead
+became a JavaScript calendar app where users could add events and a public dictionary where users could add words and their definitions
+along with sounds and pictures of the word. Editing was allowed. I wanted users to be able to modify their own words they added - for this
+I created a simple password system that authenticated a user (to make sure it was the original poster of the word) and then allowed
+modifications if the password matched up with the word added.
