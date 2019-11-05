@@ -1,0 +1,2 @@
+This lets users send in feature requests and report bugs to the site admin. A form is filled in and an email is sent to the site admin
+via the Swift API
