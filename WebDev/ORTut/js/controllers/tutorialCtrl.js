@@ -11,4 +11,15 @@ angular.module('tutorialCtrlMod', [])
 		$scope.tutObject.number *=2;
 	}
 
-	}]);
+	}])
+
+.directive("nkWelcomeMessage", function() {
+
+	return {
+
+		restrict: "E",
+		template: "<div>Hello!</div>"
+	}
+
+
+});

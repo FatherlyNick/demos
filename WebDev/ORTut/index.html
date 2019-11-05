@@ -19,9 +19,15 @@
  <p>Number: {{tutObject.number}}</p>
  <button ng-click="timesTwo()">x2</button>
  <p>Combined strings: {{tutObject.str1 + " and " + tutObject.str2}}</p>
+ <label>Str1 data bind:</label>
+ <input ng-model="tutObject.str1"/>
+ <br />
+ <label>Str2 data bind:</label>
+ <input ng-model="tutObject.str2"/>
 
 <br />
 
+<nk-welcome-message />
 
 </div>
 
