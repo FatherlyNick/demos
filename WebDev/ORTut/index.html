@@ -5,13 +5,12 @@
   <title>Angular.js 1.7.8 sample</title>
   
 
-  <script src="lib/angular.min.js"></script>
- <script src="js/app.js"></script>
-  <script src="js/controllers/tutorialCtrl.js"></script>
-  
-
+<script src="lib/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/tutorialCtrl.js"></script>
   
 </head>
+
 <body>
 
 <div ng-app="tutorialCtrlMod" ng-controller="tutController">
@@ -24,10 +23,16 @@
  <br />
  <label>Str2 data bind:</label>
  <input ng-model="tutObject.str2"/>
-
+ <br />
+<br />
+ <lable>Number:</lable>
+ <input type="number" ng-model="tutObject.number" />
+ <button ng-click="sq(tutObject.number)">Square!</button>
 <br />
 
 <nk-welcome-message />
+
+
 
 </div>
 
