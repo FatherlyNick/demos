@@ -8,9 +8,9 @@
 		ini_set('display_errors', '1');
 
 	
-		//$_POST['username'] = "se212020";
+		//$_POST['username'] = "REDACTED_usr";
 	
-		//$_POST['password'] = "vqk6630";
+		//$_POST['password'] = "REDACTED_pwd";
 
 	
 		include_once("db-connection.php");
