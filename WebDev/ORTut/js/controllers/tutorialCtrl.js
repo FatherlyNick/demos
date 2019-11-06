@@ -29,14 +29,15 @@ angular.module('tutorialCtrlMod', [])
 })
 
 .factory("Math", function() {
-	var calculations = {};
-	//calculations.number = '4';
-	calculations.sq = function(input) {
+	var result = {};
+	result.sq = function(input) {
 
-			return input * input;
+		return result = input * input;
 
 	};
 
-	return calculations;
+
+
+	return result; // final return
 
 });
