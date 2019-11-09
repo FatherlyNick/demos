@@ -1,55 +1,55 @@
 body { 
 
-		background:#333;
-		background-image: linear-gradient(#000000, #0c0c0c);
+    background:#333;
+    background-image: linear-gradient(#000000, #0c0c0c);
 }
 
 
 #topBanner {
 
-			right: 0;
-			display: inline-block;
-			text-align: center;
-			width: 30%;
-			margin-left:auto; 
-			margin-right:auto;
-			position: fixed;
-			/*overflow: hidden;*/
+        right: 0;
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        margin-left:auto; 
+        margin-right:auto;
+        position: fixed;
+        /*overflow: hidden;*/
 
 }
 
 
 #topBanner button { 	
-			color: white; 
-			font-family: "Fjalla One";
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 16px;
-			padding: 0% 10% 0% 10%;
-			border: none;
-			background: transparent;
+        color: white; 
+        font-family: "Fjalla One";
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 0% 10% 0% 10%;
+        border: none;
+        background: transparent;
 }
 
 
 #topBanner button:hover {
 
-			color: black;
-			background-color: white;
-			font-family: "Fjalla One";
-			text-decoration: none;
-			text-transform: uppercase;
-			text-align: center;
-			border: none;
-			background: white;
+        color: black;
+        background-color: white;
+        font-family: "Fjalla One";
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+        background: white;
 }
 
 
 #content {
 
-			text-align: center;
-			color: white;
-			font-family: "Trebuchet MS", sans-serif;
-			padding-top: 15%;
+        text-align: center;
+        color: white;
+        font-family: "Trebuchet MS", sans-serif;
+        padding-top: 15%;
 
 }
 
@@ -59,9 +59,9 @@ body {
 
 #content table {
 
-			margin-left:auto; 
-    		margin-right:auto;
-			padding-top: 2%;
+        margin-left:auto; 
+        margin-right:auto;
+        padding-top: 2%;
 }
 
 
@@ -69,8 +69,8 @@ body {
 
 
 #answers {
-			text-align: left;
-			padding-top: 5%;
+        text-align: left;
+        padding-top: 5%;
 }
 
 
@@ -84,26 +84,47 @@ body {
 
 .dropdown-content {
 
-			display: none;
-			position: absolute;
-			background-color: #f1f1f1;
-			min-width: 130px;
-			font-family: "Fjalla One";
-			text-transform: uppercase;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 130px;
+        font-family: "Fjalla One";
+        text-transform: uppercase;
 }
 
 
 .dropdown-content a {
 
-			color: black;
-			padding: 3px;
-			text-decoration: none;
-			display: block;
+        color: black;
+        padding: 3px;
+        text-decoration: none;
+        display: block;
 }
 
 .dropdown-content a:hover { background-color: #ddd }
 
 .show { display:block; } 
 
+#set-grid {
 
-
+        background-color: grey;
+        height: 270px;
+        padding: 10px;
+        margin: 1px;
+        border-collapse: separate;
+        border-spacing: 10px;
+}
+        
+.set-card {
+        background-color: rgb(231, 153, 88);
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        font-size: .9rem;
+        margin: 20px 30px 40px 50px;
+          border-spacing: 20px;
+        margin-left: 100px;
+        padding: 20px;
+        height: 160px;
+        width: 260px;
+        display: table-cell;
+ }

@@ -7,11 +7,15 @@
 			<img id="previewWindow" src="" style="border: outset; background-color:#333" height="100%" width="30%" hidden="true" alt="Set Image">
 		</div>
 
+	<div id="set-grid">
+        <div class="set-card">
+		Item 1
+		</div>
+		<div class="set-card">
+		Item 2
+		</div>
 
-        <li>
-            <ul>Item 1</ul> <ul>Item 3</ul>
-            <ul>Item 2</ul> <ul>Item 4</ul>
-        </li>
+	</div>
 
 		<form name="order-form" onsubmit="return validateForm(this); return false;" action="order2.php" method="POST">
 		Set number:<br/>

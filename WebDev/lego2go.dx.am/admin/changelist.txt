@@ -2,6 +2,7 @@
 + Changed DEBUG alerts to console.log()
 + Changed the order of the Changelog file. Now latest updates are on top.
 + Fixed issue with the Proxima+Nova Google font. It was throwing a 403 unless it was the first font to load.
++ Experimenting with a different layout for the Order page - I want to have a grid of cells with set info in each. I think jQuery would be best for this.
 #####ver-03/02/19##### v0.91
 + About button is now a dropdown
 + Added links to the FAQ and About page in the dropdown
