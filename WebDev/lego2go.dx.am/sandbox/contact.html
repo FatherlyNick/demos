@@ -1,0 +1,17 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.lego2go.dx.am/sandbox/css.css" title="default" />
+<script src="http://www.lego2go.dx.am/sandbox/javascript.js" type="text/javascript"></script>
+
+
+
+<div class="messagepop pop">
+    <form method="post" id="new_message" action="/messages">
+        <p><label for="email">Your email or name</label><input type="text" size="30" name="email" id="email" /></p>
+        <p><label for="body">Message</label><textarea rows="6" name="body" id="body" cols="35"></textarea></p>
+        <p><input type="submit" value="Send Message" name="commit" id="message_submit"/> or <a class="close" href="/">Cancel</a></p>
+    </form>
+</div>
+
+<input type="button" id="contact" onclick="popUp(contact)" value="non-IBM">
+<input type="button" id="contact2" onclick="popUp(contact)" value="IBM">

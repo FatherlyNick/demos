@@ -1,0 +1,109 @@
+body { 
+
+		background:#333;
+		background-image: linear-gradient(#000000, #0c0c0c);
+}
+
+
+#topBanner {
+
+			right: 0;
+			display: inline-block;
+			text-align: center;
+			width: 30%;
+			margin-left:auto; 
+			margin-right:auto;
+			position: fixed;
+			/*overflow: hidden;*/
+
+}
+
+
+#topBanner button { 	
+			color: white; 
+			font-family: "Fjalla One";
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 16px;
+			padding: 0% 10% 0% 10%;
+			border: none;
+			background: transparent;
+}
+
+
+#topBanner button:hover {
+
+			color: black;
+			background-color: white;
+			font-family: "Fjalla One";
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			border: none;
+			background: white;
+}
+
+
+#content {
+
+			text-align: center;
+			color: white;
+			font-family: "Trebuchet MS", sans-serif;
+			padding-top: 15%;
+
+}
+
+
+#content a { color: white; }
+
+
+#content table {
+
+			margin-left:auto; 
+    		margin-right:auto;
+			padding-top: 2%;
+}
+
+
+#questions { text-align: left; }
+
+
+#answers {
+			text-align: left;
+			padding-top: 5%;
+}
+
+
+#answers a { line-height: 2; }
+
+
+.dropbtn2:hover, .dropbtn2:focus { font-family: "Fjalla One"; }
+
+
+.dropdown { display: inline-block; }
+
+.dropdown-content {
+
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 130px;
+			font-family: "Fjalla One";
+			text-transform: uppercase;
+}
+
+
+.dropdown-content a {
+
+			color: black;
+			padding: 3px;
+			text-decoration: none;
+			display: block;
+}
+
+.dropdown-content a:hover { background-color: #ddd }
+
+.show { display:block; } 
+
+
+

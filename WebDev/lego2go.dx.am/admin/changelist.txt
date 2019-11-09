@@ -1,0 +1,64 @@
+#####ver-09/11/19##### v0.91
++ Changed DEBUG alerts to console.log()
++ Changed the order of the Changelog file. Now latest updates are on top.
++ Fixed issue with the Proxima+Nova Google font. It was throwing a 403 unless it was the first font to load.
+#####ver-03/02/19##### v0.91
++ About button is now a dropdown
++ Added links to the FAQ and About page in the dropdown
++ Added link to Contact page in the FAQ page
++ Cleaned up CSS
+#####ver-09/11/18##### v0.9
++ Added a PDF document explaining how the service works w/ url to the pdf
+#####ver-09/11/18##### v0.8
++ Changed the top banner to buttons
++ Made the top banner to be fixed on the page (scroll dynamic)
++ Added an FAQ page
+- Need to link it to the About button as a drop-down
+#####ver-09/11/18##### v0.7
++ Fixed up the jQuery code. It now handles id as an argument and not just on specific class
+#####ver-08/11/18##### v0.7
++ Added a sandbox section with jQuery animation
+#####ver-05/11/18##### v0.7
++ Fixed a bug with the duration box. It was readonly
++ Added an order form page that will be displayed after user selects a set.
+- Need to add order form
+- Add ability to add a set and checkout later.
+#####ver-27/10/18##### v0.6
++ Fixed up the set preview JS
++ Added pictures of the sets
++ Added Halo Phantom set to the list
++ Fixed setPreview code to view all of the present sets
+- The preview windows is too small for the full picture. Need to shrink the image to the window and make it previewable to a mouse-click.
+#####ver-26/10/18##### v0.5
++ Added about information with prices
++ Added a proper set selection to the Order page
++ Added a proper duration window with min and max values
++ Added JS code to preview the set selected by user
++ Started work on the order DB code
+#####ver-24/10/18##### v0.4
++ Added a proper form to the orders page
++ Created a database
++ Added an orders table
++ Added users table
+- Need to format the order form
+- Need to add db code to handle orders
+- Need to add JS code to validate the order form
+- Need to add ability to register users
+- Need to add ability to login and order as a registered customer
+#####ver-23/10/18##### v0.3
++ Added a placeholder form to the order page
+#####ver-22/10/18##### v0.2
++ Added actual landing pages
++ Added css with actual style
++ Imported custom font
++ The main page has a colour and look to it
++ Moved the banner buttons to the header
++ Banner buttons have a style
++ Removed unecessary code from header
+#####ver-21/10/18##### v0.1
++ Registered domain Lego2go.dx.am; rentabrik.dx.am
++ Added an FB Like page
++ Added a favicon
++ Added placeholder text
++ Modified backup script
++ Created dir structure for site
