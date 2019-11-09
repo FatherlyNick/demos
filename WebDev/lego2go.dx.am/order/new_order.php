@@ -8,6 +8,11 @@
 		</div>
 
 
+        <li>
+            <ul>Item 1</ul> <ul>Item 3</ul>
+            <ul>Item 2</ul> <ul>Item 4</ul>
+        </li>
+
 		<form name="order-form" onsubmit="return validateForm(this); return false;" action="order2.php" method="POST">
 		Set number:<br/>
 		<select name="set_num" id="set_num" onchange="previewSet()" required>
