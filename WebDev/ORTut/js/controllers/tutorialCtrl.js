@@ -15,12 +15,17 @@ angular.module('tutorialCtrlMod', [])
 		$scope.tutObject.number = Math.sq(input);
 	}
 
-	}])
+}]) // end of tutController
+
+.controller('tutController2' ["$scope", function($scope) {
+
+	$scope.secondTutorial = "This is the second tutorial!";
+
+}])// end of tutController2
 
 .directive("nkWelcomeMessage", function() {
 
 	return {
-
 		restrict: "E",
 		template: "<div>Hello!</div>"
 	}
@@ -35,8 +40,6 @@ angular.module('tutorialCtrlMod', [])
 		return result = input * input;
 
 	};
-
-
 
 	return result; // final return
 
