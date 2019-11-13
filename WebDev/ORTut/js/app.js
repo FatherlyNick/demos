@@ -1,26 +1,22 @@
 var app = angular.module('tutorialApp', ["ngRoute","tutorialCtrlMod"]);
 
-var routeConfig = function ($routeProvider) {
+app.config(function ($routeProvider) {
+    
+    $routeProvider
 
-    $routeProvider.when('/', {
+        .when('/', {
             templateUrl: 'home.html',
             controller: 'tutController'
-        });
-        $routeProvider.when('/tutorial', {
+        })
+        .when('/tutorial', {
             templateUrl: 'tutorial.html',
             controller: 'tutController'
-        });
-        $routeProvider.when("/tutorialSecond", {
+        })
+        .when("/tutorialSecond", {
             templateUrl: "tutorialSecond.html",
             controller: "tutController"
-        });
-        $routeProvider.when("/", {
-            templateUrl: "home.html",
-            controller: "tutController"
-        });
-        $routeProvider.otherwise({
+        })
+        .otherwise({
             templateUrl: 'notFound.html'
         });
-};
-
-app.config(routeConfig);
+});
