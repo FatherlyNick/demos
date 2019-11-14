@@ -7,3 +7,12 @@ C:\Users\Niko.K\source\repos\SudokuSolver\bin\Debug\SudokuSolver.exe
 C:\Users\Niko.K\source\repos\SudokuSolver\bin\Debug\SudokuSolver.pdb
 C:\Users\Niko.K\source\repos\SudokuSolver\obj\Debug\SudokuSolver.exe
 C:\Users\Niko.K\source\repos\SudokuSolver\obj\Debug\SudokuSolver.pdb
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\bin\Debug\SudokuSolver.exe.config
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\bin\Debug\SudokuSolver.exe
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\bin\Debug\SudokuSolver.pdb
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.csprojAssemblyReference.cache
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.Form1.resources
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.Properties.Resources.resources
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.csproj.GenerateResource.cache
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.exe
+C:\Users\Niko.K\Documents\GitHub\demos\Apps\SudokuSolver\obj\Debug\SudokuSolver.pdb
