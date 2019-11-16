@@ -25,7 +25,7 @@ namespace SudokuSolver {
 
         #region varDefs
         private TextBox[] tBoxArr = new TextBox[81]; //create an 81 cell int array
-        private TableLayoutPanel[] tLayPan = new TableLayoutPanel[9]; //Array of 9 panels. Each panel has 9 cells
+        //private TableLayoutPanel[] tLayPan = new TableLayoutPanel[9]; //Array of 9 panels. Each panel has 9 cells
         private Button button1;
         //private TextBox textBox1;
         private TextBox textBox256; //DEBUG
@@ -40,7 +40,6 @@ namespace SudokuSolver {
         /// </summary>
         private void InitializeComponent() {
             this.textBox256 = new System.Windows.Forms.TextBox();
-            //this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
@@ -51,13 +50,6 @@ namespace SudokuSolver {
             this.textBox256.Name = "textBox256";
             this.textBox256.Size = new System.Drawing.Size(100, 20);
             this.textBox256.TabIndex = 256;
-            // 
-            // textBox1
-            // 
-            //this.textBox1.Location = new System.Drawing.Point(0, 0);
-            //this.textBox1.Name = "textBox1";
-            //this.textBox1.Size = new System.Drawing.Size(100, 20);
-            //this.textBox1.TabIndex = 254;
             // 
             // button1
             // 
@@ -97,10 +89,9 @@ namespace SudokuSolver {
             this.PerformLayout();
 
         }
-        #endregion
 
-        
-       
+
+        #endregion
     }//eo class
     
 } //eo namespace
