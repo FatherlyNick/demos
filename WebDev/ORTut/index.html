@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tutorialApp" ng-controller="HomeController">
 <head>
   <meta charset="UTF-8">
-  <title>Angular.js 1.7.8 sample</title>
+  
+  <title>Angular.js 1.7.8 sample - {{page.name}}</title>
   
 
   <script src="lib/angular.min.js"></script>
@@ -18,31 +19,27 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <img src="/media/placeholder.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    AngularJS
+    AngularJS -  {{page.name}}
   </a>
 </nav>
 </header>
 <br />
-<body ng-app="tutorialApp">
-<div class="container">
+<body>
+<div class="container" ng-controller="ListCtrl">
+    
   <div class="col-12">
     <ul class="list-group">
-      <li class="list-group-item text-center clearfix">
+      <li ng-repeat="thing in myItems" class="list-group-item text-center clearfix">
+          
         <button type="button" class="btn float-left btn-dark"><img src="media/edit-ico-L.png"/></button>
-        Item 1</li>
-      <li class="list-group-item">Item 2</li>
-      <li class="list-group-item">Item 3</li>
-      <li class="list-group-item">Item 4</li>
-      <li class="list-group-item">Item 5</li>
+        {{thing.itemName}}
+      </li>
+      
     </ul>
   </div>
 </div>
 
-<p>Hello!</p>
-
 <div ng-view></div>
-
-
 
 </body>
 </html>
