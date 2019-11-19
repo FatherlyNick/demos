@@ -27,6 +27,7 @@ app.config(function ($routeProvider) {
     $routeProvider
 
         .when('/', {
+            //$scope.page.title: 'Home';
             templateUrl: 'home.html',
             controller: 'tutController'
         })
@@ -36,6 +37,10 @@ app.config(function ($routeProvider) {
         })
         .when("/tutorialSecond", {
             templateUrl: "tutorialSecond.html",
+            controller: "tutController"
+        })
+        .when("/rpPage/:param", {
+            templateUrl: "rpPage.html",
             controller: "tutController"
         })
         .otherwise({

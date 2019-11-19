@@ -1,6 +1,6 @@
 angular.module('tutorialCtrlMod', [])
 
-.controller('tutController', ['$scope', 'Math', function($scope, Math) {
+.controller('tutController', ['$scope', '$routeParams', 'Math', function($scope, $routeParams, Math) {
 
 	$scope.tutObject = {};
 	$scope.tutObject.str1 = "Str1";
@@ -14,6 +14,8 @@ angular.module('tutorialCtrlMod', [])
 	$scope.sq = function(input) {
 		$scope.tutObject.number = Math.sq(input);
 	}
+
+	$scope.param = $routeParams.param;
 
 }]) // end of tutController
 
