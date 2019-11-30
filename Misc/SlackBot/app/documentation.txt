@@ -1,0 +1,13 @@
+##
+to get the channel id use
+##
+message.channel;
+
+payload.channel_id;
+----
+
+##
+To get the username directly, use
+##
+var uid = (`<@${event.user}>`);
+---

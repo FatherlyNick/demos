@@ -1,0 +1,546 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  2 debug pnpm:package-json: 
+    initial: 
+      name: "bolt-app-template"
+      version: "0.0.1"
+      description: "A basic template to spin up a Bolt app for Slack"
+      main: "app.js"
+      scripts: 
+        start: "node app.js"
+      dependencies: 
+        @slack/bolt: "^1.4.1"
+        botkit: "^4.6.0"
+        slack-botkit: "^0.2.1"
+        slackbots: "^1.2.0"
+      engines: 
+        node: "11.x"
+      repository: 
+        url: "https://glitch.com/edit/#!/bolt-app-template"
+      license: "MIT"
+      keywords: 
+        - "node"
+        - "glitch"
+        - "express"
+      readme: "Welcome to Glitch\n=================\n\nClick `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.\n\n**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.\n\nFind out more [about Glitch](https://glitch.com/about).\n\n\nYour Project\n------------\n\nOn the front-end,\n- edit `public/client.js`, `public/style.css` and `views/index.html`\n- drag in `assets`, like images or music, to add them to your project\n\nOn the back-end,\n- your app starts at `server.js`\n- add frameworks and packages in `package.json`\n- safely store app secrets in `.env` (nobody can see this but you and people you invite)\n\n\nMade by [Glitch](https://glitch.com/)\n-------------------\n\n\\ ゜o゜)ノ\n"
+      readmeFilename: "README.md"
+      gitHead: "6ad850c882933640350d0cf35f01d35b7229972c"
+      _id: "bolt-app-template@0.0.1"
+    prefix: "/app"
+  3 debug pnpm:stage: 
+    prefix: "/app"
+    stage: "resolution_started"
+  4 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/bolt/1.4.1"
+    requester: "/app"
+    status: "resolved"
+  5 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botkit/4.6.1"
+    requester: "/app"
+    status: "resolved"
+  6 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/slackbots/1.2.0"
+    requester: "/app"
+    status: "resolved"
+  7 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/bolt/1.4.1"
+    requester: "/app"
+    status: "found_in_store"
+  8 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/logger/2.0.0"
+    requester: "/app"
+    status: "resolved"
+  9 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/types/1.3.0"
+    requester: "/app"
+    status: "resolved"
+  10 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/web-api/5.6.0"
+    requester: "/app"
+    status: "resolved"
+  11 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/express/4.17.2"
+    requester: "/app"
+    status: "resolved"
+  12 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/node/12.12.14"
+    requester: "/app"
+    status: "resolved"
+  13 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/axios/0.18.1"
+    requester: "/app"
+    status: "resolved"
+  14 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/express/4.17.1"
+    requester: "/app"
+    status: "resolved"
+  15 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/please-upgrade-node/3.2.0"
+    requester: "/app"
+    status: "resolved"
+  16 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/raw-body/2.4.1"
+    requester: "/app"
+    status: "resolved"
+  17 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/tsscmp/1.0.6"
+    requester: "/app"
+    status: "resolved"
+  18 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botkit/4.6.1"
+    requester: "/app"
+    status: "found_in_store"
+  19 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/body-parser/1.19.0"
+    requester: "/app"
+    status: "resolved"
+  20 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botbuilder/4.6.2"
+    requester: "/app"
+    status: "resolved"
+  21 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botbuilder-dialogs/4.6.2"
+    requester: "/app"
+    status: "resolved"
+  22 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botframework-connector/4.6.2"
+    requester: "/app"
+    status: "resolved"
+  23 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/debug/4.1.1"
+    requester: "/app"
+    status: "resolved"
+  24 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/hbs/4.0.6"
+    requester: "/app"
+    status: "resolved"
+  25 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/mustache/3.1.0"
+    requester: "/app"
+    status: "resolved"
+  26 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/path/0.12.7"
+    requester: "/app"
+    status: "resolved"
+  27 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/request/2.88.0"
+    requester: "/app"
+    status: "resolved"
+  28 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ware/1.3.0"
+    requester: "/app"
+    status: "resolved"
+  29 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/slackbots/1.2.0"
+    requester: "/app"
+    status: "found_in_store"
+  30 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/extend/2.0.2"
+    requester: "/app"
+    status: "resolved"
+  31 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/lodash/4.17.15"
+    requester: "/app"
+    status: "resolved"
+  32 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/vow/0.4.20"
+    requester: "/app"
+    status: "resolved"
+  33 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ws/1.1.5"
+    requester: "/app"
+    status: "resolved"
+  34 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ws-heartbeat/1.1.0"
+    requester: "/app"
+    status: "resolved"
+  35 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/logger/2.0.0"
+    requester: "/app"
+    status: "found_in_store"
+  36 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/types/1.3.0"
+    requester: "/app"
+    status: "found_in_store"
+  37 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@slack/web-api/5.6.0"
+    requester: "/app"
+    status: "found_in_store"
+  38 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/is-stream/1.1.0"
+    requester: "/app"
+    status: "resolved"
+  39 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/p-queue/2.3.2"
+    requester: "/app"
+    status: "resolved"
+  40 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/eventemitter3/3.1.2"
+    requester: "/app"
+    status: "resolved"
+  41 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/form-data/2.5.1"
+    requester: "/app"
+    status: "resolved"
+  42 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/is-stream/1.1.0"
+    requester: "/app"
+    status: "resolved"
+  43 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/p-queue/2.4.2"
+    requester: "/app"
+    status: "resolved"
+  44 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/p-retry/4.2.0"
+    requester: "/app"
+    status: "resolved"
+  45 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/express/4.17.2"
+    requester: "/app"
+    status: "found_in_store"
+  46 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/body-parser/1.17.1"
+    requester: "/app"
+    status: "resolved"
+  47 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/express-serve-static-core/4.17.0"
+    requester: "/app"
+    status: "resolved"
+  48 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/serve-static/1.13.3"
+    requester: "/app"
+    status: "resolved"
+  49 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/node/12.12.14"
+    requester: "/app"
+    status: "found_in_store"
+  50 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/axios/0.18.1"
+    requester: "/app"
+    status: "found_in_store"
+  51 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/follow-redirects/1.5.10"
+    requester: "/app"
+    status: "resolved"
+  52 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/is-buffer/2.0.4"
+    requester: "/app"
+    status: "resolved"
+  53 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/express/4.17.1"
+    requester: "/app"
+    status: "found_in_store"
+  54 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/accepts/1.3.7"
+    requester: "/app"
+    status: "resolved"
+  55 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/array-flatten/1.1.1"
+    requester: "/app"
+    status: "resolved"
+  56 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/content-disposition/0.5.3"
+    requester: "/app"
+    status: "resolved"
+  57 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/content-type/1.0.4"
+    requester: "/app"
+    status: "resolved"
+  58 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/cookie/0.4.0"
+    requester: "/app"
+    status: "resolved"
+  59 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/body-parser/1.19.0"
+    requester: "/app"
+    status: "found_in_store"
+  60 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/bytes/3.1.0"
+    requester: "/app"
+    status: "resolved"
+  61 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/debug/2.6.9"
+    requester: "/app"
+    status: "resolved"
+  62 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/depd/1.1.2"
+    requester: "/app"
+    status: "resolved"
+  63 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/http-errors/1.7.2"
+    requester: "/app"
+    status: "resolved"
+  64 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/iconv-lite/0.4.24"
+    requester: "/app"
+    status: "resolved"
+  65 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/on-finished/2.3.0"
+    requester: "/app"
+    status: "resolved"
+  66 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/qs/6.7.0"
+    requester: "/app"
+    status: "resolved"
+  67 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/raw-body/2.4.0"
+    requester: "/app"
+    status: "resolved"
+  68 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/type-is/1.6.18"
+    requester: "/app"
+    status: "resolved"
+  69 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botbuilder/4.6.2"
+    requester: "/app"
+    status: "found_in_store"
+  70 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/node/10.17.6"
+    requester: "/app"
+    status: "resolved"
+  71 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botbuilder-core/4.6.2"
+    requester: "/app"
+    status: "resolved"
+  72 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/filenamify/4.1.0"
+    requester: "/app"
+    status: "resolved"
+  73 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/fs-extra/7.0.1"
+    requester: "/app"
+    status: "resolved"
+  74 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/please-upgrade-node/3.2.0"
+    requester: "/app"
+    status: "found_in_store"
+  75 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/raw-body/2.4.1"
+    requester: "/app"
+    status: "found_in_store"
+  76 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/tsscmp/1.0.6"
+    requester: "/app"
+    status: "found_in_store"
+  77 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/cookie-signature/1.0.6"
+    requester: "/app"
+    status: "resolved"
+  78 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/encodeurl/1.0.2"
+    requester: "/app"
+    status: "resolved"
+  79 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/escape-html/1.0.3"
+    requester: "/app"
+    status: "resolved"
+  80 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/etag/1.8.1"
+    requester: "/app"
+    status: "resolved"
+  81 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/finalhandler/1.1.2"
+    requester: "/app"
+    status: "resolved"
+  82 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/fresh/0.5.2"
+    requester: "/app"
+    status: "resolved"
+  83 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/merge-descriptors/1.0.1"
+    requester: "/app"
+    status: "resolved"
+  84 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/methods/1.1.2"
+    requester: "/app"
+    status: "resolved"
+  85 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/parseurl/1.3.3"
+    requester: "/app"
+    status: "resolved"
+  86 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/path-to-regexp/0.1.7"
+    requester: "/app"
+    status: "resolved"
+  87 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/proxy-addr/2.0.5"
+    requester: "/app"
+    status: "resolved"
+  88 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/range-parser/1.2.1"
+    requester: "/app"
+    status: "resolved"
+  89 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/safe-buffer/5.1.2"
+    requester: "/app"
+    status: "resolved"
+  90 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/send/0.17.1"
+    requester: "/app"
+    status: "resolved"
+  91 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/serve-static/1.14.1"
+    requester: "/app"
+    status: "resolved"
+  92 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/setprototypeof/1.1.1"
+    requester: "/app"
+    status: "resolved"
+  93 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/statuses/1.5.0"
+    requester: "/app"
+    status: "resolved"
+  94 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/utils-merge/1.0.1"
+    requester: "/app"
+    status: "resolved"
+  95 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/vary/1.1.2"
+    requester: "/app"
+    status: "resolved"
+  96 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/semver-compare/1.0.0"
+    requester: "/app"
+    status: "resolved"
+  97 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/http-errors/1.7.3"
+    requester: "/app"
+    status: "resolved"
+  98 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/unpipe/1.0.0"
+    requester: "/app"
+    status: "resolved"
+  99 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botbuilder-dialogs/4.6.2"
+    requester: "/app"
+    status: "found_in_store"
+  100 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@microsoft/recognizers-text-choice/1.1.4"
+    requester: "/app"
+    status: "resolved"
+  101 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@microsoft/recognizers-text-date-time/1.1.4"
+    requester: "/app"
+    status: "resolved"
+  102 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@microsoft/recognizers-text-number/1.1.4"
+    requester: "/app"
+    status: "resolved"
+  103 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@microsoft/recognizers-text-suite/1.1.4"
+    requester: "/app"
+    status: "resolved"
+  104 error pnpm: "Cannot read property 'latest' of undefined"
+  105 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/cldr-data/35.1.0"
+    requester: "/app"
+    status: "resolved"
+  106 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/globalize/1.4.2"
+    requester: "/app"
+    status: "resolved"
+  107 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botframework-connector/4.6.2"
+    requester: "/app"
+    status: "found_in_store"
+  108 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@azure/ms-rest-js/1.2.6"
+    requester: "/app"
+    status: "resolved"
+  109 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/@types/jsonwebtoken/7.2.8"
+    requester: "/app"
+    status: "resolved"
+  110 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/base64url/3.0.1"
+    requester: "/app"
+    status: "resolved"
+  111 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/botframework-schema/4.6.2"
+    requester: "/app"
+    status: "resolved"
+  112 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/jsonwebtoken/8.0.1"
+    requester: "/app"
+    status: "resolved"
+  113 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/node-fetch/2.6.0"
+    requester: "/app"
+    status: "resolved"
+  114 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/rsa-pem-from-mod-exp/0.8.4"
+    requester: "/app"
+    status: "resolved"
+  115 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/debug/4.1.1"
+    requester: "/app"
+    status: "found_in_store"
+  116 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ms/2.1.2"
+    requester: "/app"
+    status: "resolved"
+  117 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/hbs/4.0.6"
+    requester: "/app"
+    status: "found_in_store"
+  118 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/handlebars/4.3.5"
+    requester: "/app"
+    status: "resolved"
+  119 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/walk/2.3.14"
+    requester: "/app"
+    status: "resolved"
+  120 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/mustache/3.1.0"
+    requester: "/app"
+    status: "found_in_store"
+  121 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/path/0.12.7"
+    requester: "/app"
+    status: "found_in_store"
+  122 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/process/0.11.10"
+    requester: "/app"
+    status: "resolved"
+  123 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/util/0.10.4"
+    requester: "/app"
+    status: "resolved"
+  124 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/request/2.88.0"
+    requester: "/app"
+    status: "found_in_store"
+  125 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/aws-sign2/0.7.0"
+    requester: "/app"
+    status: "resolved"
+  126 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/aws4/1.9.0"
+    requester: "/app"
+    status: "resolved"
+  127 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/caseless/0.12.0"
+    requester: "/app"
+    status: "resolved"
+  128 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/combined-stream/1.0.8"
+    requester: "/app"
+    status: "resolved"
+  129 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/extend/3.0.2"
+    requester: "/app"
+    status: "resolved"
+  130 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/forever-agent/0.6.1"
+    requester: "/app"
+    status: "resolved"
+  131 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/form-data/2.3.3"
+    requester: "/app"
+    status: "resolved"
