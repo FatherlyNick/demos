@@ -27,9 +27,8 @@ namespace SudokuSolver {
         private TextBox[] tBoxArr = new TextBox[81]; //create an 81 cell int array
         //private TableLayoutPanel[] tLayPan = new TableLayoutPanel[9]; //Array of 9 panels. Each panel has 9 cells
         private Button button1;
-        //private TextBox textBox1;
-        private TextBox textBox256; //DEBUG
         private ProgressBar pBar1; //Loading
+        private int[] numArr = new int[10];// temp array to be used for solving
         #endregion
 
         #region Windows Form Designer generated code
@@ -39,17 +38,9 @@ namespace SudokuSolver {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.textBox256 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
-            // 
-            // textBox256
-            // 
-            this.textBox256.Location = new System.Drawing.Point(93, 345);
-            this.textBox256.Name = "textBox256";
-            this.textBox256.Size = new System.Drawing.Size(100, 20);
-            this.textBox256.TabIndex = 256;
             // 
             // button1
             // 
@@ -62,7 +53,7 @@ namespace SudokuSolver {
             // 
             // pBar1
             // 
-            this.pBar1.Location = new System.Drawing.Point(199, 345);
+            this.pBar1.Location = new System.Drawing.Point(93, 345);
             this.pBar1.Maximum = 81;
             this.pBar1.Name = "pBar1";
             this.pBar1.Size = new System.Drawing.Size(100, 23);
@@ -78,7 +69,6 @@ namespace SudokuSolver {
             this.ClientSize = new System.Drawing.Size(460, 380);
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox256);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -86,7 +76,6 @@ namespace SudokuSolver {
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SudokuSolver 0.1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -33,9 +33,10 @@ namespace SudokuSolver {
                 if (inBox[i].Text != "0") {
                     setValArray[i] = i; //Save index as a 'solid' index; SetValArray will have indexes that need to be checked.
                     tBoxArr[i].ReadOnly = true; // do not allow front-end modifications
+                    Console.WriteLine("Solid index at: [" + i + "]: " + GetValAt(i));
                 }
                 pBar1.PerformStep();
-                Console.WriteLine("Solid index at: ["+i+"]: "+setValArray[i]);
+                
             }
             return setValArray; //return array with 'solid' and 'soft' indexes
         }//eo getPresets
@@ -76,16 +77,24 @@ namespace SudokuSolver {
         }
 
         public void Solve(int [] inputArray, int [] solidArray) {
-            //go through the 
-            for (int i = inputArray.Length; i > 0; i--) {
-                //only bother with 'soft' indexes
-                if(solidArray[i] == 0) {
 
+            bool solved = false;
+            int i = 0;
+            while (!solved)
+            {
 
+                for (; i < 10; i++)
+                {
+
+                    numArr[inputArray[i]]++;
 
                 }
             }
-        }
+                solved = true;
+            //go through the array
+        }//eoSolve
 
+
+        
     }//eo class
 }//eo namespace
