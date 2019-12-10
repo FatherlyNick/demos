@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="changeList.txt" />
-    <Content Include="misc.txt" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
