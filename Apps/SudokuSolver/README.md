@@ -25,6 +25,11 @@ Top corner values: 0,9,18,27,36,45,54,63,72 :: {Common denominator = 9}
 Bottom corner values: 8,17,26,35,44,53,62,71,80 :: {Common denominator = none, increment is always 9}
 
 To correct a panel = 
+0) Check which numbers are already present. 0 = skip to next index, !0 = remove from number array
+0.1) populate the panel with remaining numbers
+Input: [1,0,0] {1,2,3}
+Checking: [1,0,0] {,2,3}
+Output: [1,2,3] {,,,}
 
 1) Check the validity of local panel
 
