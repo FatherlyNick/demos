@@ -24,7 +24,10 @@ namespace SudokuSolver {
             setValArray = GetPresets(tBoxArr); //set the indexes. 0 cells are soft, non-0 are solid.
             //execute solving here on setArray
             MessageBox.Show("valAt1: " + GetValAt(1) + " valAt6: " + GetValAt(6) + " tBoxArr[6].Text: " + tBoxArr[6].Text + "; set indexes are: " + setValArray, "!!!DEBUG!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning); //DEBUG
-            
+        }
+
+        private void Button2_Click(object sender, EventArgs e) {
+            Solve(tBoxArr, setValArray);
         }
 
         //Method to save 'solid' indexes that cannot be changed
@@ -76,24 +79,25 @@ namespace SudokuSolver {
             //return val;
         }
 
-        public void Solve(int [] inputArray, int [] solidArray) {
+        public void Solve(TextBox [] inputArray, int [] solidArray) {
 
             bool solved = false;
             int i = 0;
-            while (!solved)
-            {
+            while (!solved) {
 
-                for (; i < 10; i++)
-                {
-
-                    numArr[inputArray[i]]++;
+                for (; i <= 3; i++) {
+                    System.Console.WriteLine("*******************\n");
+                    System.Console.WriteLine("["+inputArray[0].Text+","+inputArray[1].Text + "," + inputArray[2].Text + "]\n");
+                    System.Console.WriteLine("[" + countArray[1] + "," + countArray[2] + "," + countArray[3] + "]\n");
+                    System.Console.WriteLine("*******************\n");
+                    countArray[GetValAt(i)]++;//count the numbers
 
                 }
-            }
                 solved = true;
+            }
+                //solved = true;
             //go through the array
         }//eoSolve
-
 
         
     }//eo class

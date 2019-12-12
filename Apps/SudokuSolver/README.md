@@ -69,7 +69,9 @@ a) check if all numbers are present
 
 	if Numbers_array[i] > 1 then //if its a repeating number
 	replace = Panel_array.IndexOf<i> //get index of repeating number
-	Panel_array[replace] = 0; //insert a 0 in repeating index
+	Panel_array[i] = 0; //insert a 0 in repeating index
+
+	if Panel_array[i] == 0 {Panel_array[i] = Numbers_array[i] } //if number is zero, set it to the value of current index
 	//
 	
 	}

@@ -28,7 +28,7 @@ namespace SudokuSolver {
         //private TableLayoutPanel[] tLayPan = new TableLayoutPanel[9]; //Array of 9 panels. Each panel has 9 cells
         private Button button1;
         private ProgressBar pBar1; //Loading
-        private int[] numArr = new int[10];// temp array to be used for solving
+        private int[] countArray = new int[4];// temp array to be used for solving
         #endregion
 
         #region Windows Form Designer generated code
@@ -40,6 +40,7 @@ namespace SudokuSolver {
         private void InitializeComponent() {
             this.button1 = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
+            this.Button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -60,6 +61,16 @@ namespace SudokuSolver {
             this.pBar1.Step = 1;
             this.pBar1.TabIndex = 257;
             // 
+            // Button2
+            // 
+            this.Button2.Location = new System.Drawing.Point(200, 345);
+            this.Button2.Name = "Button2";
+            this.Button2.Size = new System.Drawing.Size(75, 23);
+            this.Button2.TabIndex = 258;
+            this.Button2.Text = "Solve";
+            this.Button2.UseVisualStyleBackColor = true;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -67,6 +78,7 @@ namespace SudokuSolver {
             this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(460, 380);
+            this.Controls.Add(this.Button2);
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -81,6 +93,8 @@ namespace SudokuSolver {
 
 
         #endregion
+
+        private Button Button2;
     }//eo class
     
 } //eo namespace
