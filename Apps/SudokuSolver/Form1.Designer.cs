@@ -28,7 +28,7 @@ namespace SudokuSolver {
         //private TableLayoutPanel[] tLayPan = new TableLayoutPanel[9]; //Array of 9 panels. Each panel has 9 cells
         private Button button1;
         private ProgressBar pBar1; //Loading
-        private int[] countArray = new int[4];// temp array to be used for solving
+        private readonly int[] countArray = new int[4] { 0, 1, 2, 3 };// temp array to be used for solving
         #endregion
 
         #region Windows Form Designer generated code

@@ -80,19 +80,37 @@ namespace SudokuSolver {
         }
 
         public void Solve(TextBox [] inputArray, int [] solidArray) {
-
+            int[] tempArray = new int[7] { 99, 1, 2, 3,4,5,6 };
             bool solved = false;
             int i = 0;
             while (!solved) {
 
-                for (; i <= 3; i++) {
+                //Find used numbers
+                for (; i < tempArray.Length; i++) {
                     System.Console.WriteLine("*******************\n");
-                    System.Console.WriteLine("["+inputArray[0].Text+","+inputArray[1].Text + "," + inputArray[2].Text + "]\n");
-                    System.Console.WriteLine("[" + countArray[1] + "," + countArray[2] + "," + countArray[3] + "]\n");
+                   // System.Console.WriteLine("i["+inputArray[0].Text+","+inputArray[1].Text + "," + inputArray[2].Text + "]\n");
+
+                    for (int loop = 0; loop < tempArray.Length; loop++) {
+                        System.Console.Write(inputArray[loop].Text + ", ");
+                    }   //System.Console.Write("]\n");
+
+                    System.Console.Write("[");
+                    for (int loop = 0; loop < tempArray.Length; loop++) {
+                        System.Console.Write(tempArray[loop] + ", ");
+                    }   //System.Console.Write("]\n");
                     System.Console.WriteLine("*******************\n");
-                    countArray[GetValAt(i)]++;//count the numbers
+                    
+                    
+                    tempArray[GetValAt(i)] = 0;//'cross' out numbers that are in by making them zero in the temp array;
 
                 }
+                //we now have the unused numbers left over in our temp array. Time to fill them in.
+                //Indexes of tempArray where number is 0
+
+
+
+
+
                 solved = true;
             }
                 //solved = true;
