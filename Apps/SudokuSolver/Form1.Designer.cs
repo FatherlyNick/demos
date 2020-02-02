@@ -70,6 +70,7 @@ namespace SudokuSolver {
             this.Button2.Text = "Solve";
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.Button2.Enabled = false;
             // 
             // Form1
             // 
