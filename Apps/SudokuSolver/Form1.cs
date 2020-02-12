@@ -86,6 +86,17 @@ namespace SudokuSolver {
         }
 
         public void Solve(TextBox [] inputArray, int [] solidArray) {
+            /*
+             * I think I need to re-write this completely.
+             * 1) go through cells 1,2,3,10,11,12,19,20,21
+             * 2) fix conflicts
+             * 3) go through cells 1,4,7..and so on
+             * 4) fix conflicts
+             * 5) go through cells 1,2,3,4,5,6,7,8,9
+             * 6) fix conflicts
+             * 7) Repeat 1) to 6) until no conflicts present
+            */
+
             int[] tempArray = new int[82]; 
             tempArray[0] = 99;
             for(int initVar = 1; initVar<tempArray.Length; initVar++) { //temp array will have [0] = 99, [1] = 1 .. [n] = n

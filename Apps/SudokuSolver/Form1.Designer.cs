@@ -87,7 +87,7 @@ namespace SudokuSolver {
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SudokuSolver 0.1";
+            this.Text = "SudokuSolver 0.2";
             this.ResumeLayout(false);
 
         }
