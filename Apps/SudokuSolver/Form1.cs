@@ -21,33 +21,35 @@ namespace SudokuSolver {
             InitElements();//Create panels and textboxes
         }
 
-        public int[] setValArray = new int[81]; //setValArray will store the indexes of the 'hard-coded' values; -1 means its a soft index and can be modified
+        public int[] solidIndexArray = new int[81]; //setValArray will store the indexes of the 'hard-coded' values; -1 means its a soft index and can be modified
 
         //DEBUG button
         private void Button1_Click(object sender, EventArgs e) {
-            setValArray = GetPresets(tBoxArr); //set the indexes. 0 cells are soft, non-0 are solid.
+            solidIndexArray = GetPresets(tBoxArr); //set the indexes. 0 cells are soft, non-0 are solid.
             //execute solving here on setArray
-            MessageBox.Show("valAt1: " + GetValAt(1) + " valAt6: " + GetValAt(6) + " tBoxArr[6].Text: " + tBoxArr[6].Text + "; set indexes are: " + setValArray, "!!!DEBUG!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning); //DEBUG
+            //MessageBox.Show("valAt1: " + GetValAt(1) + " valAt6: " + GetValAt(6) + " tBoxArr[6].Text: " + tBoxArr[6].Text + "; set indexes are: " + solidIndexArray, "!!!DEBUG!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning); //DEBUG
             button1.Enabled = false; //prevent re-clicking
             Button2.Enabled = true;
         }
 
         private void Button2_Click(object sender, EventArgs e) {
-            Solve(tBoxArr, setValArray);
+            Solve(tBoxArr, solidIndexArray);
         }
 
         //Method to save 'solid' indexes that cannot be changed and fill the rest with its cell number
+        //@TODO Need some error handling here
         public int[] GetPresets(TextBox[] inBox) {
+            int errorState1 = 0; //error flag
             for (int i = 0; i < 81; i++) {
                 if (inBox[i].Text != "0") {
-                    setValArray[i] = i; //Save index as a 'solid' index; SetValArray will have indexes that need to be checked.
+                    solidIndexArray[i] = i; //Save index as a 'solid' index; SetValArray will have indexes that need to be checked.
                     tBoxArr[i].ReadOnly = true; // do not allow front-end modifications
                     Console.WriteLine("Solid index at: [" + i + "]: " + GetValAt(i));
-                } else { tBoxArr[i].Text = "" + ((i % 9) + 1); }
+                } else { tBoxArr[i].Text = "" + ((i % 9) + 1); } //fill the non-solid cells with number from 1 to 9 in order of cell number.
                 pBar1.PerformStep();
                 
             }
-            return setValArray; //return array with 'solid' and 'soft' indexes
+            return solidIndexArray; //return array with 'solid' and 'soft' indexes
         }//eo getPresets
 
         //create text boxes with their parameters
@@ -56,7 +58,7 @@ namespace SudokuSolver {
             //Generate textBoxes
             int x = 0, y = 0, increment = 22, factor = 27;
             for (int i = 0; i < 81; i++) {
-                tBoxArr[i] = new TextBox { Name = "textBox" + i, Text = ""+(0), TabIndex = i, Size = new System.Drawing.Size(20, 20) }; //Create textboxes with init val of 0
+                tBoxArr[i] = new TextBox { Name = "textBox" + i, Text = ""+(0), TabIndex = i, Size = new System.Drawing.Size(20, 20), MaxLength=1}; //Create textboxes with init val of 0
                 tBoxArr[i].Location = new Point(x,y); //TextBox coordinates
                 this.Controls.Add(tBoxArr[i]); //put the new TextBox into the grid
                 
@@ -81,7 +83,7 @@ namespace SudokuSolver {
         // cell starts at 0 ends at 80
         public int GetValAt(int cell) {
             //int val;
-            try { return Int32.Parse(tBoxArr[cell].Text); } catch(Exception e) { Console.Write(e); return 0; }
+            try { return Int32.Parse(tBoxArr[cell].Text); } catch(Exception e) { Console.Write(e); MessageBox.Show("Value at index: ["+cell+"] is not a number!\n"+e, "Value at index" + cell + "is not a number!", MessageBoxButtons.OK, MessageBoxIcon.Warning); return -1; }
             //return val;
         }
 

@@ -9,6 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = App that solves sudoku puzzles
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9846F060-C940-4A7F-BB0C-1B71A2FFC2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
