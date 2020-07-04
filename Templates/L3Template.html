@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+	<head>
+		<title>L3 template</title>
+		<script type="text/javascript">
+			function copyToClip(str) {
+				function listener(e) {
+					e.clipboardData.setData("text/html", str);
+					e.clipboardData.setData("text/plain", str);
+					e.preventDefault();
+				}
+			document.addEventListener("copy", listener);
+			document.execCommand("copy");
+			document.removeEventListener("copy", listener);
+			};
+		</script>
+		
+	</head>
+
+	<body>
+		
+	 <button onclick="copyToClip(document.getElementById('templateText').innerHTML)">
+		Copy L3 collab Template
+	 </button>
+	<button onclick="copyToClip(document.getElementById('updateText').innerHTML)">
+		Copy L2 update Template
+	 </button>
+<div id=templateText style="display:none">
+  
+<b>1) Is this a 24x7 support request:</b><br/><br/><br/>
+<b>2) Statement of the problem:</b><br/><br/><br/>
+<b>3) Is the problem Reproducible?</b><br/><br/><br/>
+<b>4) Reproduction steps:</b><br/><br/><br/>
+<b>5) Product(s) version (incl. Fixpack Level) / DBMS Product & Version:</b><br/><br/><br/>
+<b>6) L2 Engineer analysis:</b><br/><br/><br/>
+<b>7) MustGather info - Logs and Traces:</b><br/><br/><br/>
+<b>8) Have you had a peer review by another L2?</b><br/><br/><br/>
+ 
+</div>
+
+	<div id="Shown text" style=display>
+	**************** Begin of Salesforce Case Transfer Format **************
+<br/>
+<br/>1) Is this a 24x7 support request:
+<br/>
+<br/>   Yes or No - If yes provide a rationale, and any expectations
+<br/>   and/or special request of the L3 support team. The 24x7
+<br/>   requests are severity 1 tickets only and are intended for
+<br/>   high business impact and production down issues including
+<br/>   the full 24x7 availability of the customer as well.
+<br/>
+<br/>
+<br/>   NOTE: 24x7 designation aims to put higher weight on a request
+<br/>   for support, and spans the entire work force involved in
+<br/>   responding to it. It is not meant as a directive placed on
+<br/>   any one individual or team.
+<br/>
+<br/>2) Statement of the problem:
+<br/>
+<br/>   Describe the problem as detailed as possible. Please also provide
+<br/>   business impact this issue is having on customer, especially for
+<br/>   severity 1 issues.
+<br/>
+<br/>3) Is the problem Reproducible? yes, by customer
+<br/>
+<br/>   Yes or No - If yes define who can reproduce it (L2, L3,
+<br/>   customer only or a combination of that).
+<br/>
+<br/>4) Reproduction steps:
+<br/>
+<br/>   Clearly describe the step by step instructions how to
+<br/>   reproduce the problem. Add links to available documentation
+<br/>   or information about the test machine where the reproduction
+<br/>   case is available and running.
+<br/>
+<br/>5) Product(s) version (incl. Fixpack Level) / DBMS Product & Version:
+<br/>
+<br/>   Define the exact release levels of the BPM product and related
+<br/>   back-end systems involved (like the database, ECM system or others).
+<br/>   Add a link where to find the detailed version information.
+<br/>
+<br/>6) L2 Engineer analysis:
+<br/>
+<br/>   Describe the analysis from L2 side and which exact assets (PI, TWX,
+<br/>   logs, traces, dumps and others) were used and what the findings are.
+<br/>
+<br/>7) MustGather info - Logs and Traces:
+<br/>
+<br/>   Add links to all relevant assets on ECUREP (logs, traces and so on).
+<br/>   In case of a Blue Diamond ticket define clearly where the related
+<br/>   assets are stored on the Blue Diamond network shares.
+<br/>
+<br/>8) Have you had a peer review by another L2?
+<br/>
+<br/>   Yes or No - If yes who was the reviewer, if no define why.
+	</div>
+	<hr/>
+	<div id=updateText style="display:none">
+  
+<b>Action Taken:</b><br/><br/><br/>
+
+<b>Action Plan:</b><br/><br/><br/>
+
+<b>Action Plan Owner:</b><br/><br/><br/>
+ 
+	</div>
+	
+	<div id="Shown text" style=display>
+	
+	**************** Begin of Salesforce Case Update for L2 Format ************** 
+<br/>Action Taken:
+<br/>Actions taken and analysis performed by L3
+<br/>
+<br/>Action Plan:
+<br/>Define the next actions required to move problem analysis and solution finding forward
+<br/>
+<br/>Action Plan Owner:
+<br/>Define who is/are the next action taker(s)
+<br/>
+<br/>Update Made By: 
+<br/><Identify who made this update. Why? Updates made in one system, ie. RTC, will be
+<br/>transposed to into the complimentary system, ie. Salesforce. The complimentary
+<br/>system will identify the update originator as a system id. It is convenient and
+<br/>sometimes necessary to understand who made the update.>
+<br/>**************** End of Salesforce Case Update for L2 Format **************
+
+	</div>
+	</body>
+
+
+</html>
